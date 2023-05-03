@@ -2,11 +2,11 @@
     "myData": [
         {
             "name": "login01",
-            "content": "_includes/login/_01"
+            "content": "login/_01"
         },
         {
             "name": "login02",
-            "content": "_includes/login/_02"
+            "content": "login/_02"
         }
     ]
 }
