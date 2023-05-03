@@ -1,1 +1,14 @@
+<% 
+    var l = meta.lang;
+
+    if (l === "ja") {
+        var y = messages_ja;
+    } else {
+        var y = messages_en;
+    }
+%>
+
 <h1>login01</h1>
+
+<!-- 日英対応（途中） -->
+<p><%- y.name -%></p>
