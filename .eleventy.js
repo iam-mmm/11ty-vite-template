@@ -1,7 +1,10 @@
-module.exports = {
-    dir: {
-        input: "src",
-        output: "dist",
-        includes: "_includes",
+module.exports =  function (eleventyConfig) {
+    return {
+        templateFormats: ['ejs', 'html'],
+        htmlTemplateEngine: 'ejs',
+        dir: {
+            input: "src/temp/contents",
+            output: "dist",
+        }
     }
 };
