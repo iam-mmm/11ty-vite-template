@@ -4,8 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "eleventy",
-    "serve": "eleventy --serve"
+    "dev": "concurrently npm:dev:*",
+    "dev:eleventy": "eleventy --serve",
+    "dev:vite": "vite",
+    "build": "npm run build:vite && npm run build:eleventy",
+    "build:eleventy": "NODE_ENV=production eleventy",
+    "build:vite": "NODE_ENV=production vite build"
   },
   "repository": {
     "type": "git",
@@ -19,6 +23,8 @@
   },
   "homepage": "https://github.com/iammmm-ddff00/11ty-vite-template#readme",
   "devDependencies": {
-    "@11ty/eleventy": "^2.0.1"
+    "@11ty/eleventy": "^2.0.1",
+    "concurrently": "^8.0.1",
+    "vite": "^4.3.4"
   }
 }
