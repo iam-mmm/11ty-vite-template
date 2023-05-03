@@ -1,4 +1,5 @@
 ---
+layout: temp.ejs
 pagination:
   data: globalDataSet.myData
   size: 1
@@ -6,6 +7,6 @@ permalink: "<%- pagination.items[0].name -%>.html"
 ---
 <ol>
 <% for (var item of pagination.items) { %>
-    <p><%= item %></p>
+    <p><%= item.name %></p>
 <% } %>
 </ol>
