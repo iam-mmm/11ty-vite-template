@@ -1,8 +1,10 @@
 {
     "myData": [
-      "item1",
-      "item2",
-      "item3",
-      "item4"
+        {
+            "name": "test01"
+        },
+        {
+            "name": "test02"
+        }
     ]
 }
