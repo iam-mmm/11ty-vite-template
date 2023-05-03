@@ -1,0 +1,11 @@
+---
+pagination:
+  data: globalDataSet.myData
+  size: 1
+permalink: "different/page-<%- pagination.pageNumber -%>/index.html"
+---
+<ol>
+<% for (var item of pagination.items) { %>
+    <p><%= item %></p>
+<% } %>
+</ol>
