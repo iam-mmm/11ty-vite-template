@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/iammmm-ddff00/11ty-vite-template#readme",
   "devDependencies": {
-    "@11ty/eleventy": "^2.0.1"
+    "@11ty/eleventy": "^2.0.1",
+    "js-yaml": "^4.1.0"
   }
 }

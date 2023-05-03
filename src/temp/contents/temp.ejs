@@ -6,6 +6,8 @@ permalink: "<%- pagination.items[0].name -%>.html"
 ---
 <% 
     var d = pagination.items[0];
+    var ja = messages_ja;
+    var en = messages_en;
 %>
 <!DOCTYPE html>
 <html lang="ja">
@@ -16,16 +18,24 @@ permalink: "<%- pagination.items[0].name -%>.html"
         <title>タイトル</title>
     </head>
     <body>
+        <!-- インクルード -->
         <%- include('_includes/common/header') %>
         <%- include('_includes/' + d.content) %>
+
+        <!-- 繰り返し -->
         <ol>
-            <% for (var item of pagination.items) { %>
-                <li><%= item.name %></p>
-            <% } %>
+        <% for (var item of pagination.items) { %>
+            <li><%= item.name %></p>
+        <% } %>
         </ol>
 
+        <!-- 条件分岐 -->
         <% if (d.name === 'login01') { %>
-            <p>ログイン１のみ表示</p>
+        <p>ログイン１のみ表示</p>
         <% } %>
+
+        <!-- 日英対応（途中） -->
+        <p><%- ja.name -%></p>
+        <p><%- en.name -%></p>
     </body>
 </html>
