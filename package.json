@@ -28,6 +28,7 @@
     "concurrently": "^8.0.1",
     "css-declaration-sorter": "^6.4.0",
     "postcss": "^8.4.23",
+    "sass": "^1.62.1",
     "vite": "^4.3.4"
   },
   "browserslist": [
