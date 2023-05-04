@@ -15,10 +15,8 @@ export default defineConfig({
           }
           // image
           // if (/\.(gif|jpe?g|png|svg)$/.test(name ?? '')){
-          //   return 'assets/images/[name].[ext]';
+          //   return 'images/[name].[ext]';
           // }
-          // default value
-          return 'assets/[name].[ext]';
         },
       }
     }
