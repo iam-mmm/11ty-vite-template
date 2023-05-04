@@ -3,7 +3,7 @@ export default defineConfig({
   build: {
     outDir: 'dist',
     rollupOptions: {
-      input: '/src/temp/js/main.js',
+      input: '/src/js/main.js',
       output: {
         entryFileNames: 'js/main.js',
       }
