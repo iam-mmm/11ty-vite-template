@@ -5,12 +5,9 @@ pagination:
 permalink: "<%- pagination.items[0].name -%>.html"
 ---
 <% 
-    var d = pagination.items[0];
-    var y = messages_ja;
-
-    const pageMeta = {
-      lang: 'ja',
-    }
+    d = pagination.items[0];
+    y = messages_ja;
+    l = 'ja';
 %>
 <!DOCTYPE html>
 <html lang="ja">
@@ -30,7 +27,7 @@ permalink: "<%- pagination.items[0].name -%>.html"
     <body>
         <!-- インクルード -->
         <%- include('_includes/common/header') %>
-        <%- include('_includes/' + d.content, { meta: pageMeta }) %>
+        <%- include('_includes/' + d.content) %>
 
         <!-- 繰り返し -->
         <ol>

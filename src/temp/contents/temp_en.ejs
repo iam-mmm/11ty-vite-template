@@ -5,12 +5,9 @@ pagination:
 permalink: "en/<%- pagination.items[0].name -%>.html"
 ---
 <% 
-    var d = pagination.items[0];
-    var y = messages_en;
-
-    const pageMeta = {
-      lang: 'en',
-    }
+    d = pagination.items[0];
+    y = messages_ja;
+    l = 'ja';
 %>
 <!DOCTYPE html>
 <html lang="en">
@@ -19,17 +16,18 @@ permalink: "en/<%- pagination.items[0].name -%>.html"
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>英語版テンプレート</title>
-        <link rel="stylesheet" href="./scss/style.scss">
         <% if (build.env === "production") { %>
+        <link rel="stylesheet" href="./css/style.css">
         <script type="module" src="./js/main.js"></script>
         <% } else { %>
+        <link rel="stylesheet" href="./scss/style.scss">
         <script type="module" src="http://localhost:3000/src/js/main.js"></script>
         <% } %>
     </head>
     <body>
         <!-- インクルード -->
         <%- include('_includes/common/header') %>
-        <%- include('_includes/' + d.content, { meta: pageMeta }) %>
+        <%- include('_includes/' + d.content) %>
 
         <!-- 繰り返し -->
         <ol>
