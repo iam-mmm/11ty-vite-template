@@ -1,3 +1,5 @@
+import "../scss/style.scss";
+
 function init() {
     const successNode = document.createElement('p')
     document.body.appendChild(successNode)
