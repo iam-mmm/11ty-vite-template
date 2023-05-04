@@ -14,11 +14,11 @@ export default defineConfig({
             return 'css/style.css';
           }
           // image
-          // if (/\.(gif|jpe?g|png|svg)$/.test(name ?? '')){
-          //   return 'assets/images/[name].[ext]';
-          // }
+          if (/\.(gif|jpe?g|png|svg)$/.test(name ?? '')){
+            return 'images/[name].[ext]';
+          }
           // default value
-          return 'assets/[name].[ext]';
+          return '[name].[ext]';
         },
       }
     }
