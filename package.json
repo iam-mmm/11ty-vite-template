@@ -24,7 +24,16 @@
   "homepage": "https://github.com/iammmm-ddff00/11ty-vite-template#readme",
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
+    "autoprefixer": "^10.4.14",
     "concurrently": "^8.0.1",
+    "css-declaration-sorter": "^6.4.0",
+    "postcss": "^8.4.23",
     "vite": "^4.3.4"
-  }
+  },
+  "browserslist": [
+    "last 3 versions",
+    "> 5%",
+    "Firefox ESR",
+    "not dead"
+  ]
 }
